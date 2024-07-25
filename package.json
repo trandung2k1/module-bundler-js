@@ -1,0 +1,30 @@
+{
+    "name": "module-bundler-js",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "scripts": {
+        "build:prod": "rm -rf dist && rollup -c",
+        "build:dev": "rm -rf dist && rollup -c -w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.24.9",
+        "@babel/plugin-external-helpers": "^7.24.7",
+        "@babel/preset-env": "^7.24.8",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-commonjs": "^26.0.1",
+        "@rollup/plugin-json": "^6.1.0",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-run": "^3.1.0",
+        "npm-run-all": "^4.1.5",
+        "rollup": "^4.19.0",
+        "rollup-plugin-terser": "^7.0.2"
+    }
+}
